@@ -18,15 +18,10 @@ class PokeCell: UICollectionViewCell {
     var pokemon: Pokemon!
     
     //Create Rounded cell
-//    init(frame: CGRect) {
-//        super.init(frame: frame)
-//    }
-    
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        
-//        layer.cornerRadius = 5.0
-//    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        layer.cornerRadius = 5.0
+    }
     
     //We need away to assighn above things at some point in the future
     //pass a function of configuring cell into the pokemon object
